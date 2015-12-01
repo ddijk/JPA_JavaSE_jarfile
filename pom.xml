@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>nl.dijkrosoft.snippets</groupId>
-    <artifactId>TestJpaCascading</artifactId>
+    <artifactId>JPA_JavaSE_jarfile</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>TestJpaCascading</name>
+    <name>JPA_JavaSE_jarfile</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
