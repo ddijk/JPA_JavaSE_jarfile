@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+    <!--
+    <persistence-unit name="myPU" transaction-type="RESOURCE_LOCAL">
+      <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+      <class>nl.dijkrosoft.snippets.testjpacascading.entities.Seller</class>
+      <class>nl.dijkrosoft.snippets.testjpacascading.entities.Item</class>
+      <class>nl.dijkrosoft.snippets.testjpacascading.entities.Adres</class>
+      <class>nl.dijkrosoft.snippets.testjpacascading.cascading.Portfolio</class>
+      <class>nl.dijkrosoft.snippets.testjpacascading.cascading.PortfolioTd</class>
+      <class>nl.dijkrosoft.snippets.testjpacascading.portfolio.PfTd</class>
+      <class>nl.dijkrosoft.snippets.testjpacascading.portfolio.Pf</class>
+      <properties>
+        <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/sun-appserv-samples"/>
+        <property name="javax.persistence.jdbc.password" value="APP"/>
+        <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
+        <property name="javax.persistence.jdbc.user" value="APP"/>
+        <property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>
+      </properties>
+    </persistence-unit>
+    -->
+    <persistence-unit name="myPU2" transaction-type="RESOURCE_LOCAL">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <exclude-unlisted-classes>false</exclude-unlisted-classes>
+        <jar-file>opal-model-3.6.0-SNAPSHOT.jar</jar-file>
+        <properties>
+            <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@//rdora16:1521/ora11"/>
+            <property name="javax.persistence.jdbc.password" value="OPAL_AGILE_DEV2"/>
+            <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+            <property name="javax.persistence.jdbc.user" value="OPAL_AGILE_DEV2"/>
+            <property name="eclipselink.ddl-generation" value="none"/>
+            <property name="eclipselink.logging.level" value="FINEST"/>
+            <property name="eclipselink.logging.level.sql" value="FINE"/>
+            <property name="eclipselink.logging.file" value="eclipselink.log"/>
+        </properties>
+    </persistence-unit>
+</persistence>
